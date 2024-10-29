@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Formulario UFMS</title>
+</head>
+
+<body>
+            <div class="container mt-5">
+            <h2 class="text-center">Formulario UFMS</h2>
+            <form action="cadastro.php" method="POST">
+
+               <fieldset class="border p-4 mb-4">
+                <legend class="w-auto">Dados Pessoais</legend>
+                <div>
+                    
+               <div class="form-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+               </div>                
+
+               <div class="form-group">
+                <label for="cpf">Cpf:</label>
+                <input type="text" id="cpf" name="cpf" class="form-control" required>
+               </div>
+               
+                <div class="form-group">
+                    <label for="website">Website:</label>
+                    <input type="text" id="website" name="website" class="form-control" required>
+                </div>
+                    
+               <div class="form-group">
+                <label for="DataNascimento">Data de nascimento:</label>
+                <input type="date" placeholder="DD/MM/YY" class="form-control" required></input> 
+               </div>
+                
+               <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="size" id="size_1" value="small">M</input>
+                <input type="radio" name="size" id="size_1" value="small">F</input>     
+               </div>
+
+               <div class="form-group">
+                <label for="celular">Celular</label>
+                <input type="celular" class="form-control" required></input>
+               </div>
+
+               <div class="form-group">
+                <label for="estadoCivil">Estado Civil:</label>
+                <select name="estadoCivil" id="estadoCivil" class="form-control" required>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="União estável">União estável</option>
+                </select>
+               </div>
+               </fieldset>
+
+
+               <fieldset class="border p-4 mb-4">
+                <legend class="w-auto">Dados de Contato</legend>
+
+                <div class="form-group">
+                    <label for="end">Endereco:</label>
+                        <input id="end" name="end" class="form-control" required required></input>
+                </div>
+                    
+                <div class="form-group">
+                    <label for="bairro">Bairro:</label>
+                    <input id="bairro" name="bairro" class="form-control" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input id="cidade" name="cidade" class="form-control" required></input>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cep">Cep:</label>
+                    <input id="cep" name="cep" class="form-control" required></input>
+                </div>
+                
+                <div class="form-group">
+                    <select name="uf" id="uf" class="form-control" required>
+                        <option value="To">To</option>
+                        <option value="Sp">Sp</option>
+                        <option value="Mg">Mg</option>
+                        <option value="DF">DF</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                    </select>
+                </div>
+                   
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" class="form-control" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="form-control" required>
+                </div>
+                        
+                        
+                
+               </fieldset>
+               
+               <fieldset class="border p-4 mb-4">
+                <legend class="w-auto">Dados de Cadastro</legend>
+
+                    <div class="form-group">
+                        <label for="Login">Login:</label>
+                    <input type="text" id="login" name="login" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Senha">Senha:</label>
+                        <input type="text" id="Senha" name="Senha" class="form-control" required>
+                    </div>
+               
+
+                </fieldset>
+                
+                <fieldset>
+                </div>
+                <h4 class="text-center">Deseja receber informacões sobre os seguintes assuntos abaixo:</h4>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Tecnologia</input>
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Esportes</input>  <input class="form-check-input" type="checkbox" class="form-check-label" id="esportes" name="interesses[]" value="Esportes">  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Automóveis</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Culinária</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Política</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Policial</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Tempo</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Cultura</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Economia</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Jogos</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Educacão</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Viagem</input>  
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Empregos</input>    
+                    <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Moda e Estilo</input>  
+                    </div>  
+                <input type="checkbox" class="form-check-label" name="size" id="size_1" value="small">Li as regras de cadastro e autorizo a criacão do usuário</input>  
+            </div>
+                </fieldset>
+
+                <button id="btnForm" type="submit" class="btn btn-primary">Enviar</button>
+                <button id="btnForm2" type="return" class="btn btn-secondary">Retornar</button>
+            </form>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
